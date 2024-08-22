@@ -1,4 +1,5 @@
- import discord_icon from '../assets/discord.svg';
+import React from 'react'
+import discord_icon from '../assets/discord.svg';
 const Navbar = () => {
   return (
     <section className='navbar'>

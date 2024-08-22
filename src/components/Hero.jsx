@@ -1,3 +1,4 @@
+import React from 'react';
 import star from '../assets/star.svg';
 import half_star from '../assets/half-star.svg';
 
