@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className='left-container'>
             <div className='logo'>
                 <span></span>
-                <p>SYNTASK</p>
+                <p>SYNTASK.</p>
             </div>
             <div className='counter-container'>
                 <span></span>
