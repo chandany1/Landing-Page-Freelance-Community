@@ -137,7 +137,7 @@
   background-size: cover;
 }
 
-.hero-container::after{
+/* .hero-container::after{
   content: ' ';
   display: block;
   position: absolute;
@@ -150,14 +150,16 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-}
+} */
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   padding-top: 100px;
-  display: flex;
+  /* display: flex; */
+  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .rating {
@@ -182,14 +184,93 @@
 }
 
 .heading-msg{
-  text-align: center;
   margin: 0;
   font-size: 72px;
   line-height: 1.2;
 }
 .support-msg {
-  text-align: center;
   font-size: 20px;
   line-height: 1.6;
   color: #f2f2f2;
+}
+
+#buttons-container {
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.create-account-button {
+  background-color: #FF4929;
+  padding: 12px 42px;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+#buttons-container img {
+  /* margin-left: 20px; */
+  background-color: #FF4929;
+  overflow:visible;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+#buttons-container span {
+  background-color: #FF4929;
+  width: 12px;
+  height: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.trust-text {
+  font-size: 16px;
+  color: #D6D6D6;
+}
+
+.people-grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+    overflow: hidden;
+    margin-top: 110px;
+    margin-bottom: 96px;
+  }
+
+.people-grid-item {
+  /* background-color: lightblue; */
+  aspect-ratio: 1;
+}
+
+.people-grid-item img {
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.person-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: -32px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 2px 8px;
+}
+
+.person-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.person-country {
+  font-size: 14px;
+  font-weight: 400;
 }
