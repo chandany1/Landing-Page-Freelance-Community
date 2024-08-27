@@ -9,9 +9,9 @@ const PeopleGrid = () => {
             <img src={person.image} />
             <div className="person-info-container">
               <span className="person-name">{person.name}</span>
-              <div>
+              <div className="country-info-container ">
                 <span className="person-country">{person.country}</span>
-                <CountryFlag countryCode='us' />
+                <CountryFlag countryCode={person.flag} />
               </div>
             </div>
           </div>
@@ -22,12 +22,11 @@ const PeopleGrid = () => {
 };
 
 const CountryFlag = ({ countryCode }) => {
-    return (
-      <span
-        className={`flag-icon flag-icon-${countryCode.toLowerCase()}`}
-        data-country-code={countryCode}
-      ></span>
-    );
-  };
+  return (
+    <img className="country-flag"
+      src={`https://flagcdn.com/w80/${countryCode.toLowerCase()}.png`}
+    ></img>
+  );
+};
 
 export default PeopleGrid;
